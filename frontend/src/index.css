@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg-primary: #16161a;
+  --color-bg-secondary: #1c1c20;
+  --color-bg-tertiary: #232328;
+  --color-bg-hover: #26262b;
+  --color-bg-active: #2d2d33;
+  --color-bg-surface: #1e1e23;
+
+  --color-border: #282830;
+  --color-border-light: #34343c;
+
+  --color-text-primary: #e4e4e8;
+  --color-text-secondary: #96969f;
+  --color-text-tertiary: #65656e;
+  --color-text-disabled: #47474f;
+
+  --color-accent: #5e6ad2;
+  --color-accent-hover: #6b79de;
+  --color-accent-light: rgba(94, 106, 210, 0.12);
+
+  --color-status-backlog: #5e5e6a;
+  --color-status-todo: #b8b8c4;
+  --color-status-in-progress: #e8a12a;
+  --color-status-in-review: #9b72d0;
+  --color-status-done: #26b5a0;
+  --color-status-cancelled: #47474f;
+
+  --color-priority-urgent: #eb5757;
+  --color-priority-high: #e67e3e;
+  --color-priority-medium: #e8a12a;
+  --color-priority-low: #8e8e98;
+  --color-priority-none: #47474f;
+
+  --sidebar-width: 220px;
+  --header-height: 42px;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.6);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-disabled);
+}
