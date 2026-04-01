@@ -1,0 +1,83 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px 0 12px;
+  height: 36px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.08s;
+  flex-shrink: 0;
+}
+
+.row:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.priority {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  justify-content: center;
+  opacity: 0.85;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  justify-content: center;
+}
+
+.identifier {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  font-weight: 400;
+  width: 48px;
+  flex-shrink: 0;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.title {
+  flex: 1;
+  font-size: 13.5px;
+  color: var(--color-text-primary);
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  letter-spacing: -0.01em;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.label::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
